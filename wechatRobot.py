@@ -19,9 +19,8 @@ def get_response(msg):
         },
     },
     "userInfo": {
-        #"apiKey": "af74c4f300d74314b2a904c9274dcf48",
-        "apiKey" : "1ffce46bd830420090d940cead41356e",
-        "userId": "285633"
+        "apiKey": "yourapikey",
+        "userId": "youruserid"
     }
 }
 
@@ -35,11 +34,7 @@ def get_response(msg):
 @itchat.msg_register(itchat.content.TEXT)
 def tuling_reply(msg):
     defaultReply = 'I received: ' + msg['Text']
-    print('%s: %s' % (msg['FromUserName'], msg['Text']))
-    import pdb
     reply = get_response(msg['Text'])
-    print('reply: %s' % reply)
-    pdb.set_trace()
     return reply or defaultReply
 
 
