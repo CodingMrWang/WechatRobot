@@ -2,6 +2,12 @@
 
 Let's create a wechat robot to auto reply some intelligent words when you are busy.
 
+Firstly, install itchat package
+
+```
+sudo pip install itchat
+```
+
 # Create a Tuling Robot
 
 Go to [Tuling Offical Website](http://www.tuling123.com/).
